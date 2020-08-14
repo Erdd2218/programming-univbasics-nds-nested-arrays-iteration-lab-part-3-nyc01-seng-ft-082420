@@ -2,12 +2,12 @@ def join_nested_strings(src)
   # src will be an Array of Arrays of Strings and Integers
   # Combine all Strings present in the AoA into a single value and return it
   i = 0 
-  stringArr = ""
+  stringArr = []
   
   while i < src.count do 
     in_idx = 0 
     
-    while in_idx < src[i][in_idx]
+    while in_idx < src[i][in_idx].count do 
     if src[i][in_idx] == String
       stringArr = src[i][in_idx]
     end
@@ -15,5 +15,5 @@ def join_nested_strings(src)
   end
   i += 1 
 end
-stringArr
+stringArr.join(" ")
 end
