@@ -9,7 +9,7 @@ def join_nested_strings(src)
     
     while in_idx < src[i][in_idx].count do 
       if src[i][in_idx].class == src[i][in_idx].to_s
-      stringArr = src[i][in_idx]
+      stringArr << src[i][in_idx]
      end
     in_idx += 1 
     end
