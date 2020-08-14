@@ -8,11 +8,11 @@ def join_nested_strings(src)
     in_idx = 0 
     
     while in_idx < src[i][in_idx].count do 
-    if src[i][in_idx] == src[i][in_idx].to_s
+      if src[i][in_idx] == src[i][in_idx].to_s
       stringArr = src[i][in_idx]
-    end
+     end
     in_idx += 1 
-  end
+    end
   i += 1 
 end
 stringArr.join(" ")
