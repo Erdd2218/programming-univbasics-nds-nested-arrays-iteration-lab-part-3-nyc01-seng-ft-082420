@@ -8,7 +8,7 @@ def join_nested_strings(src)
     in_idx = 0 
     
     while in_idx < src[i].count do 
-      if src[i][in_idx].class == src.respond_to?(:to_str)
+      if src[i][in_idx].class == String
       stringArr << src[i][in_idx] 
      end
     in_idx += 1 
