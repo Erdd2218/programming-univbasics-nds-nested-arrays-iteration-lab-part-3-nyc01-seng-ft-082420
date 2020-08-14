@@ -14,6 +14,6 @@ def join_nested_strings(src)
     in_idx += 1 
     end
   i += 1 
-end
+  end
 stringArr.join(" ")
 end
